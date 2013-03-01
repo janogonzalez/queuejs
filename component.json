@@ -1,0 +1,13 @@
+{
+  "name": "queuejs",
+  "repo": "janogonzalez/queuejs",
+  "description": "a simple queue data structure",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
