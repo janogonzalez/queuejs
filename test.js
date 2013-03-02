@@ -1,4 +1,4 @@
-var Queue = require('./index');
+var Queue = require('./');
 
 describe('Queue()', function() {
   it('returns an new Queue', function() {

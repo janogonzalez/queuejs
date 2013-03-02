@@ -24,9 +24,11 @@ var Queue = require('queuejs');
 var queue = new Queue();
 
 queue.enq(10);
-queue.size(); // 1
+queue.enq(5);
+queue.size(); // 2
 queue.peek(); // 10
 queue.deq(); // 10
+queue.size(); // 1
 ```
 
 ## API
@@ -37,25 +39,25 @@ Initializes a new empty `Queue`.
 
 ### Queue#deq()
 
-Dequeues the top element of the `Queue`.
+Dequeues the top element of the queue.
 Throws an `Error` when the queue is empty.
 
 ### Queue#empty()
 
-Returns whether the `Queue` is empty or not.
+Returns whether the queue is empty or not.
 
 ### Queue#enq(element)
 
-Enqueues the `element` at the end of the `Queue` and returns its new size.
+Enqueues the `element` at the end of the queue and returns its new size.
 
 ### Queue#peek()
 
-Peeks at the top element of the `Queue`.
+Peeks at the top element of the queue.
 Throws an `Error` when the queue is empty.
 
 ### Queue#size()
 
-Returns the size of the `Queue`.
+Returns the size of the queue.
 
 ## Testing
 
