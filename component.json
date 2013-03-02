@@ -3,7 +3,10 @@
   "repo": "janogonzalez/queuejs",
   "description": "a simple queue data structure",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": [
+    "queue",
+    "datastructure"
+  ],
   "dependencies": {},
   "development": {},
   "license": "MIT",
