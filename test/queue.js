@@ -1,53 +1,51 @@
-var Queue = require('./');
-
 describe('Queue()', function() {
   it('returns an new Queue', function() {
-    (new Queue()).should.be.an.instanceof(Queue);
+    expect(new Queue()).to.be.a(Queue);
   });
 
   describe('#empty', function() {
     it('returns true when the queue is empty', function() {
       var queue = new Queue();
-      queue.empty().should.be.equal(true);
+      expect(queue.empty()).to.be(true);
     });
 
     it('returns false when the queue is not empty', function() {
       var queue = new Queue();
       queue.enq('jano');
-      queue.empty().should.be.equal(false);
+      expect(queue.empty()).to.be(false);
     });
   });
 
   describe('#peek()', function() {
     it('fails when the queue is empty', function() {
       var queue = new Queue();
-      (function() {
-        queue.peek().should.be.equal(0);
-      }).should.throwError('Queue is empty');
+      expect(function() {
+        queue.peek();
+      }).to.throwException('Queue is empty');
     });
 
     it('returns the top element of the queue', function() {
       var queue = new Queue();
       queue.enq('jano');
       queue.enq('valentina');
-      queue.peek().should.be.equal('jano');
+      expect(queue.peek()).to.be('jano');
     });
   });
 
   describe('#deq()', function() {
     it('fails when the queue is empty', function() {
       var queue = new Queue();
-      (function() {
+      expect(function() {
         queue.deq();
-      }).should.throwError('Queue is empty');
+      }).to.throwException('Queue is empty');
     });
 
     it('dequeues the top element of the queue', function() {
       var queue = new Queue();
       queue.enq('jano');
       queue.enq('valentina');
-      queue.deq().should.be.equal('jano');
-      queue.size().should.be.equal(1);
+      expect(queue.deq()).to.be('jano');
+      expect(queue.size()).to.be(1);
     });
   });
 
@@ -56,27 +54,27 @@ describe('Queue()', function() {
       var queue = new Queue();
       queue.enq('jano');
       queue.enq('valentina');
-      queue.peek().should.equal('jano');
-      queue.size().should.be.equal(2);
+      expect(queue.peek()).to.be('jano');
+      expect(queue.size()).to.be(2);
     });
 
     it('returns the new size of the queue', function() {
       var queue = new Queue();
-      queue.enq('jano').should.equal(1);
+      expect(queue.enq('jano')).to.be(1);
     });
   });
 
   describe('#size()', function() {
     it('returns 0 when the queue is empty', function() {
       var queue = new Queue();
-      queue.size().should.be.equal(0);
+      expect(queue.size()).to.be(0);
     });
 
     it('returns the size of the queue', function() {
       var queue = new Queue();
       queue.enq('jano');
       queue.enq('valentina');
-      queue.size().should.be.equal(2);
+      expect(queue.size()).to.be(2);
     });
   });
 });
