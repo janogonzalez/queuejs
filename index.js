@@ -19,7 +19,7 @@ function Queue() {
  * @return {Boolean}
  * @api public
  */
-Queue.prototype.empty = function() {
+Queue.prototype.isEmpty = function() {
   return this.size() === 0;
 };
 
@@ -31,7 +31,7 @@ Queue.prototype.empty = function() {
  * @api public
  */
 Queue.prototype.peek = function() {
-  if (this.empty()) throw new Error('Queue is empty');
+  if (this.isEmpty()) throw new Error('Queue is empty');
 
   return this._elements[0];
 };
@@ -44,7 +44,7 @@ Queue.prototype.peek = function() {
  * @api public
  */
 Queue.prototype.deq = function() {
-  if (this.empty()) throw new Error('Queue is empty');
+  if (this.isEmpty()) throw new Error('Queue is empty');
 
   return this._elements.shift();
 };

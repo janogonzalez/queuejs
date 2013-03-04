@@ -3,16 +3,16 @@ describe('Queue()', function() {
     expect(new Queue()).to.be.a(Queue);
   });
 
-  describe('#empty', function() {
+  describe('#isEmpty()', function() {
     it('returns true when the queue is empty', function() {
       var queue = new Queue();
-      expect(queue.empty()).to.be(true);
+      expect(queue.isEmpty()).to.be(true);
     });
 
     it('returns false when the queue is not empty', function() {
       var queue = new Queue();
       queue.enq('jano');
-      expect(queue.empty()).to.be(false);
+      expect(queue.isEmpty()).to.be(false);
     });
   });
 

@@ -42,13 +42,13 @@ Initializes a new empty `Queue`.
 Dequeues the top element of the queue.
 Throws an `Error` when the queue is empty.
 
-### Queue#empty()
-
-Returns whether the queue is empty or not.
-
 ### Queue#enq(element)
 
 Enqueues the `element` at the end of the queue and returns its new size.
+
+### Queue#isEmpty()
+
+Returns whether the queue is empty or not.
 
 ### Queue#peek()
 
