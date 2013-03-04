@@ -1,6 +1,6 @@
 {
   "name": "queuejs",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "a simple queue data structure",
   "author": "Jano González <info@janogonzalez.com>",
   "devDependencies": {
@@ -20,7 +20,7 @@
   },
   "keywords": [
     "queue",
-    "datastructure"
+    "data structure"
   ],
   "license": "MIT"
 }

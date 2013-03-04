@@ -2,10 +2,10 @@
   "name": "queuejs",
   "repo": "janogonzalez/queuejs",
   "description": "a simple queue data structure",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "keywords": [
     "queue",
-    "datastructure"
+    "data structure"
   ],
   "dependencies": {},
   "development": {},
