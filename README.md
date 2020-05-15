@@ -1,5 +1,8 @@
 # queue.js
 
+[![Build Status](https://travis-ci.com/janogonzalez/queuejs.svg?branch=master)](
+  https://travis-ci.com/janogonzalez/queuejs)
+
 A simple queue data structure for Node.js.
 
 ## Installation
