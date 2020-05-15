@@ -1,3 +1,6 @@
+var expect = require('expect.js');
+var Queue = require('..');
+
 describe('Queue()', function() {
   it('returns an new Queue', function() {
     expect(new Queue()).to.be.a(Queue);

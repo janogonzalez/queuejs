@@ -1,19 +1,11 @@
 # queue.js
 
-A simple queue data structure for Node.js and the browser.
+A simple queue data structure for Node.js.
 
 ## Installation
 
-As component for the browser:
-
 ```
-$ component install janogonzalez/queuejs
-```
-
-As npm for Node.js:
-
-```
-$ npm install queuejs
+npm install queuejs
 ```
 
 ## Example
@@ -61,17 +53,9 @@ Returns the size of the queue.
 
 ## Testing
 
-As component in the browser, open test/test.html in your browser:
-
 ```
-$ make
-$ open test/test.html
-```
-
-As npm package:
-
-```
-$ npm test
+npm install
+npm test
 ```
 
 ## Licence
